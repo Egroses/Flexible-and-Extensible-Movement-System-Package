@@ -1,0 +1,24 @@
+{
+  "name": "com.emirhan.movementsystem",
+  "version": "1.0.0",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword3"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Emirhan's Assets",
+    "email": "emirhannggul@gmail.com"
+  },
+  "noEngineReferences": false,
+  "displayName": "Movement System"
+}
