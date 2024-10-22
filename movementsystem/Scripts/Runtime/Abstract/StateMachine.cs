@@ -10,7 +10,6 @@ namespace Runtime.Abstract
 
         public void ChangeState(IState newState)
         {
-            //note: belki buraya bi control sistemi eklenebilir
             CurrentState?.Exit();
             CurrentState = newState;
             CurrentState.Enter();

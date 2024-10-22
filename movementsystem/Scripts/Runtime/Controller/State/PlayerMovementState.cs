@@ -30,7 +30,7 @@ namespace Runtime.Controller.State
         #region IState Methods
         public virtual void Enter()
         {
-            Debug.Log("State : "+GetType().Name);//FIXME: remove this
+            Debug.Log("State : "+GetType().Name);
             AddInputActionCallbacks();
         }
         public virtual void Exit()
