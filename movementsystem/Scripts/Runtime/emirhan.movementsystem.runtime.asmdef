@@ -1,7 +1,8 @@
 {
-	"name": "emirhan.movementsystem",
+	"name": "emirhan.movementsystem.runtime",
 	"references": [
 		"Unity.InputSystem",
 		"Cinemachine"
 	]
+
 }
