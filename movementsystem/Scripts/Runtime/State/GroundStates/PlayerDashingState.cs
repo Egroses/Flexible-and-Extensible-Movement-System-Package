@@ -41,7 +41,7 @@ namespace Runtime.State.GroundStates
         public override void PhysicsUpdate()
         {
             base.PhysicsUpdate();
-            if (Time.time - _startTime > 0.1f)
+            if (Time.time - _startTime > _dashData.TimeToConsideredDashDone)
             {
                 if (playerMovementSMController.ReusableData.MovementInput == Vector2.zero)
                 {
@@ -99,7 +99,7 @@ namespace Runtime.State.GroundStates
         
         private void UpdateConsecutiveDashes()
         {
-            if (!isConsecutive())
+            if (!IsConsecutive())
             {
                 _consecutiveDashUsed = 0;
             }
@@ -116,7 +116,7 @@ namespace Runtime.State.GroundStates
             }
         }
 
-        private bool isConsecutive()
+        private bool IsConsecutive()
         {
             return Time.time < _startTime+_dashData.TimeToConsideredConsecutive;
         }

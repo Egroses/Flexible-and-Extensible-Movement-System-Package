@@ -22,6 +22,8 @@ namespace Runtime.State.GroundStates.LandingStates
             StartAnimation(playerMovementSMController.PlayerController.AnimationData.IsRollingParameterHash);
             
             playerMovementSMController.ReusableData.ShouldSprint = false;
+            playerMovementSMController.PlayerController.Input.PlayerActions.Move.Disable();
+
         }
 
         public override void PhysicsUpdate()
@@ -47,7 +49,7 @@ namespace Runtime.State.GroundStates.LandingStates
         public override void Exit()
         {
             base.Exit();
-            
+            playerMovementSMController.PlayerController.Input.PlayerActions.Move.Enable();
             StopAnimation(playerMovementSMController.PlayerController.AnimationData.IsRollingParameterHash);
         }
 

@@ -7,6 +7,7 @@ namespace Runtime.Data.ValueObject
     public class PlayerDashData
     {
         [field:SerializeField] [field: Range(1f, 3f)] public float SpeedModifier { get; private set; } = 2f;
+        [field:SerializeField] [field: Range(0f, 10f)] public float TimeToConsideredDashDone{ get; private set; } = 0.1f;
         [field:SerializeField] public PlayerRotationData RotationData { get; private set; } 
         [field:SerializeField] [field: Range(0f, 2f)] public float TimeToConsideredConsecutive { get; private set; } = 1f;
         [field:SerializeField] [field: Range(1f, 10f)] public int ConsecutiveDashesLimitAmount { get; private set; } = 3;
